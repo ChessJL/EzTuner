@@ -1,0 +1,38 @@
+
+html{height: 100%;}
+body{height: 100%; overflow:hidden; background-color: #15273a;}
+section{overflow: hidden;box-sizing:border-box;}
+
+.mh{min-height:50%;}
+
+/* home page */
+#guitar{text-align:center;}
+#ukulele{text-align:center;}
+#sketch-div{text-align:center;}
+
+#gs1{width: 6px; height:650px; }
+#gs2{width: 7px; height:650px; }
+#gs3{width: 8px; height:650px; }
+#gs4{width: 9px; height:650px; }
+#gs5{width: 10px; height:650px; }
+#gs6{width: 11px; height:650px; }
+
+#us1{width: 2px; height:650px; background: blue;}
+#us2{width: 3px; height:650px; background: blue;}
+#us3{width: 4px; height:650px; background: blue;}
+#us4{width: 5px; height:650px; background: blue;}
+
+
+
+/*
+#guitar{background-image: url("image/guitar.jpg");background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 15px;}
+#ukulele{background-image: url("image/ukulele.jpg");background-position: center; background-repeat: no-repeat; background-size: cover;margin-top: 15px;}
+ */
+
+
+
+@media (min-width: 768px) {
+
+section{max-width: 768px; border-color: yellow;}
+
+}
