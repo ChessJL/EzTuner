@@ -1,5 +1,5 @@
 # Online application page
-## EzTuner : https://chiyin1990.github.io/EzTuner/
+## EzTuner : https://chessjl.github.io/EzTuner/
 
 # Reference
 
