@@ -14,6 +14,27 @@ gs4.addEventListener("click",selectstring);
 gs5.addEventListener("click",selectstring);
 gs6.addEventListener("click",selectstring);
 
+
+//Find the loudest Frequency
+
+function getLoudestFrequency() {
+    var halfsampleRate = sampleRate() / 2; // 22050
+    var spectrum = fft.analyze(); // array of amplitudes in bins
+    var bins = spectrum.length;  // 16384 bins
+    var maxAmp = 0;
+    var largestBin;
+  // each bin equal to 22050/16384 = 1.346 Hz
+    for (var i = 0; i < 500; i++) { //for loop to find the largest amplitude of bin
+        var thisAmp = spectrum[i]; // amplitude of current bin
+        if (thisAmp > maxAmp) {
+            maxAmp = thisAmp;
+            largestBin = i; //store the location of largestbin
+        }
+    }
+    var loudestFreq = largestBin * (halfsampleRate / bins);
+    return loudestFreq;
+}
+
 // Change color when select the string
 function selectstring(){
   var counter = 0;
