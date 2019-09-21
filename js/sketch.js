@@ -17,5 +17,5 @@ function draw() {
   fill(255);
   textSize(43);
   textAlign(CENTER,CENTER);
-  text(getLoudestFrequency(),250,50);
+  text(checkchord(),250,50);
 }

@@ -14,6 +14,7 @@ var freq_gs5 =['gs5',109.5,111,71,91,'B5'];     //110
 var freq_gs6 =['gs6',81.41,83.41,51,71,'E6'];   //82.41
 
 var selected = [0,0,0,0,0,0];
+var correct;
 
 gs1.addEventListener("click",selectstring);
 gs2.addEventListener("click",selectstring);
@@ -29,6 +30,18 @@ gs4.addEventListener("click", check);
 gs5.addEventListener("click", check);
 gs6.addEventListener("click", check);
 
+// pitch frequency
+function checkchord(){
+  if(getLoudestFrequency(selected[3],selected[4])<selected[2] && getLoudestFrequency(selected[3],selected[4])>selected[1]){
+    correct = true;
+    return selected[5];
+  }else if (selected[5]!== 0 ) {
+    correct = false;
+    return selected[5];
+  }else{
+    return "Select a string";
+  }
+}
 
 //Check user is clicking Guitar string or Ukulele string.
 function check(){
