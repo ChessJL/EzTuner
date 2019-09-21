@@ -1,5 +1,6 @@
 var mic, fft;
 
+
 function setup() {
   var canvas = createCanvas(500, 100);
   canvas.parent('sketch-div');

@@ -13,6 +13,7 @@ var freq_gs4 =['gs4',145.5,148,99,119,'G4'];    //146.8
 var freq_gs5 =['gs5',109.5,111,71,91,'B5'];     //110
 var freq_gs6 =['gs6',81.41,83.41,51,71,'E6'];   //82.41
 
+var selected = [0,0,0,0,0,0];
 
 gs1.addEventListener("click",selectstring);
 gs2.addEventListener("click",selectstring);
@@ -21,7 +22,39 @@ gs4.addEventListener("click",selectstring);
 gs5.addEventListener("click",selectstring);
 gs6.addEventListener("click",selectstring);
 
+gs1.addEventListener("click", check);
+gs2.addEventListener("click", check);
+gs3.addEventListener("click", check);
+gs4.addEventListener("click", check);
+gs5.addEventListener("click", check);
+gs6.addEventListener("click", check);
 
+
+//Check user is clicking Guitar string or Ukulele string.
+function check(){
+  if(this.className === 'gs'){
+    if(this.id === freq_gs1[0]){
+      selected = freq_gs1;
+    }
+    else if (this.id === freq_gs2[0]){
+      selected = freq_gs2;
+    }
+    else if (this.id === freq_gs3[0]){
+      selected = freq_gs3;
+    }
+    else if (this.id === freq_gs4[0]){
+      selected = freq_gs4;
+    }
+    else if (this.id === freq_gs5[0]){
+      selected = freq_gs5;
+    }
+    else if (this.id === freq_gs6[0]){
+      selected = freq_gs6;
+    }
+  }else if (this.className ==='ukulele') {
+
+  }
+}
 //Find the loudest Frequency
 
 function getLoudestFrequency() {
