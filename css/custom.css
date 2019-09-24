@@ -1,7 +1,10 @@
 
 html{height: 100%;}
-body{height: 100%; overflow:hidden; background-color: #15273a;}
+body{height: 100%; background-color: #15273a;}
 section{overflow: hidden;box-sizing:border-box;}
+section ul li{list-style: none; float:left; width:50%; padding:8px;}
+section ul li img{height:225px; width:158px;}
+
 
 .mh{min-height:50%;}
 
@@ -23,7 +26,6 @@ section{overflow: hidden;box-sizing:border-box;}
 #us4{width: 5px; height:650px; background: blue;}
 
 
-
 /*
 #guitar{background-image: url("image/guitar.jpg");background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 15px;}
 #ukulele{background-image: url("image/ukulele.jpg");background-position: center; background-repeat: no-repeat; background-size: cover;margin-top: 15px;}
@@ -34,5 +36,6 @@ section{overflow: hidden;box-sizing:border-box;}
 @media (min-width: 768px) {
 
 section{max-width: 768px; border-color: yellow;}
-
+section ul li{list-style: none; float:left; width:33%;}
+section ul li img{padding:35px;height:400px; width:285px;}
 }
