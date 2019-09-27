@@ -7,10 +7,10 @@ var gs6=document.getElementById("gs6");
 var gs=document.getElementsByClassName("gs");
 
 var freq_gs1 =['gs1',328.5,331,234,254,'E1'];   //329.6
-var freq_gs2 =['gs2',245,247.5,173,193,'A2'];   //246.9
-var freq_gs3 =['gs3',195.5,197.5,135,155,'D3']; //196
-var freq_gs4 =['gs4',145.5,148,99,119,'G4'];    //146.8
-var freq_gs5 =['gs5',109.5,111,71,91,'B5'];     //110
+var freq_gs2 =['gs2',245,247.5,173,193,'B2'];   //246.9
+var freq_gs3 =['gs3',195.5,197.5,135,155,'G3']; //196
+var freq_gs4 =['gs4',145.5,148,99,119,'D4'];    //146.8
+var freq_gs5 =['gs5',109.5,111,71,91,'A5'];     //110
 var freq_gs6 =['gs6',81.41,83.41,51,71,'E6'];   //82.41
 
 var selected = [0,0,0,0,0,0];
@@ -70,14 +70,14 @@ function check(){
 }
 //Find the loudest Frequency
 
-function getLoudestFrequency() {
+function getLoudestFrequency(low,high) {
     var halfsampleRate = sampleRate() / 2; // 22050
     var spectrum = fft.analyze(); // array of amplitudes in bins
     var bins = spectrum.length;  // 16384 bins
     var maxAmp = 0;
     var largestBin;
   // each bin equal to 22050/16384 = 1.346 Hz
-    for (var i = 0; i < 500; i++) { //for loop to find the largest amplitude of bin
+    for (var i = low; i < high; i++) { //for loop to find the largest amplitude of bin
         var thisAmp = spectrum[i]; // amplitude of current bin
         if (thisAmp > maxAmp) {
             maxAmp = thisAmp;

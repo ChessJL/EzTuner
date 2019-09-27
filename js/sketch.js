@@ -14,8 +14,12 @@ function setup() {
 function draw() {
   var spectrum = fft.analyze();
   background("#15273a");
-  fill(255);
   textSize(43);
+  if (correct) {
+    fill(3, 255, 1);
+  }else{
+    fill(255);
+  }
   textAlign(CENTER,CENTER);
   text(checkchord(),250,50);
 }
