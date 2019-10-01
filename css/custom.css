@@ -1,14 +1,13 @@
 
 html{height: 100%;}
 body{height: 100%; background-color: #15273a;}
-section{overflow: hidden;box-sizing:border-box;}
+section{box-sizing:border-box;}
 section ul li{list-style: none; float:left; width:50%; padding:8px;}
 section ul li img{height:225px; width:158px;}
 
 
 .mh{min-height:50%;}
 
-/* home page */
 #guitar{text-align:center;}
 #ukulele{text-align:center;}
 #sketch-div{text-align:center;}
@@ -24,13 +23,6 @@ section ul li img{height:225px; width:158px;}
 #us2{width: 3px; height:650px; background: blue;}
 #us3{width: 4px; height:650px; background: blue;}
 #us4{width: 5px; height:650px; background: blue;}
-
-
-/*
-#guitar{background-image: url("image/guitar.jpg");background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 15px;}
-#ukulele{background-image: url("image/ukulele.jpg");background-position: center; background-repeat: no-repeat; background-size: cover;margin-top: 15px;}
- */
-
 
 
 @media (min-width: 768px) {

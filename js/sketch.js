@@ -1,8 +1,7 @@
 var mic, fft;
 
-
 function setup() {
-  var canvas = createCanvas(500, 100);
+  var canvas = createCanvas(300,100);
   canvas.parent('sketch-div');
   noFill();
   mic = new p5.AudioIn();
@@ -15,11 +14,6 @@ function draw() {
   var spectrum = fft.analyze();
   background("#15273a");
   textSize(43);
-  if (correct) {
-    fill(3, 255, 1);
-  }else{
-    fill(255);
-  }
   textAlign(CENTER,CENTER);
-  text(checkchord(),250,50);
+  indicator();
 }
