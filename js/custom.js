@@ -5,7 +5,8 @@ var gs4=document.getElementById("gs4");
 var gs5=document.getElementById("gs5");
 var gs6=document.getElementById("gs6");
 var gs=document.getElementsByClassName("gs");
-
+var allchord=document.getElementById("allchord");
+var filterchord=document.getElementById("filterchord");
 // each bin equal to 22050/16384 = 1.346 Hz
 
 //array information['str string name',
@@ -40,6 +41,7 @@ gs3.addEventListener("click", readstringinfo);
 gs4.addEventListener("click", readstringinfo);
 gs5.addEventListener("click", readstringinfo);
 gs6.addEventListener("click", readstringinfo);
+
 
 // Indicator
 
@@ -124,17 +126,37 @@ function getLoudestFrequency(low,high) {
 // Change color when select the string
 function selectstring(){
   var counter = 0;
-  for (var i = 0; i < gs.length; i++) { //chech any string is selected or not.
+  for (var i = 0; i < gs.length; i++) { //check any string is selected or not.
     if(gs[i].style.background === "blue"){
       counter = counter +1;
     }
   }
   if (counter == 6 ) {   // no strings have been selected
     this.style.background = "red";
-  }else{   // some string have been selected
+  }else{   // one string have been selected
     for (var i = 0; i < gs.length; i++) {
       gs[i].style.background = "blue" //change all back to blue
     }
     this.style.background = "red";  //change the select one to red
+  }
+}
+
+//Filter for showing chords
+function filter(note){
+  var chord = document.getElementsByClassName(note);
+  var dropdownMenuButton = document.getElementById("dropdownMenuButton");
+  var strings = '';
+  if (note !== 'All') {
+    allchord.style.display ="none";
+    filterchord.style.display ="block";
+    for (var i = 0; i < chord.length; i++) {
+      strings += chord[i].outerHTML;
+    };
+    filterchord.innerHTML = strings;
+    dropdownMenuButton.innerHTML = note;
+  }else{
+    allchord.style.display ="block";
+    filterchord.style.display ="none";
+    dropdownMenuButton.innerHTML = 'Show ALL';
   }
 }
