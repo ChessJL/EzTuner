@@ -11,7 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script language="javascript" type="text/javascript" src="js/p5.sound.js"></script>
   </head>
-
   <body class="container-fluid">
     <section class="mx-auto h-100">
       <div class="d-flex justify-content-between text-primary ">
@@ -31,7 +30,7 @@
             </div>
             <div class="modal-body">
               <p>1. Select a string</p>
-              <p>2. strum the string</p>
+              <p>2. strum the string on your ukulele</p>
               <p>3. Check the indicator. If it is showing too high, loosen the sting. If it is showing too low, tighten the string.</p>
               <p>4. If you see the color of the chord turns to green, that will be the correct tune.</p>
             </div>
@@ -44,22 +43,18 @@
       <div class="text-center">
         <a href="ukulelechord.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">See Chords</a>
       </div>
-      <div id="indicator" class="border border-primary m-3 d-flex justify-content-between text-success ">
-        <i id="toolow" class="fas fa-caret-right fa-6x my-auto mx-4"></i>
-        <label id="textarea" class="display-2 m-auto">G</label>
-        <i id="tooheight" class="fas fa-caret-left fa-6x my-auto mx-4"></i>
-      </div>
+      <div class="border border-primary m-3" id="sketch-div"></div>
       <div class="h2 d-flex justify-content-between text-primary mt-5 mx-5">
-        <span>4</span>
-        <span>3</span>
-        <span>2</span>
-        <span>1</span>
+        <span >G4</span>
+        <span >C3</span>
+        <span >E2</span>
+        <span>A1</span>
       </div>
       <div class="d-flex justify-content-between text-primary mt-2 mx-5 overflow-hidden">
-        <span id="us4"></span>
-        <span id="us3"></span>
-        <span id="us2"></span>
-        <span id="us1"></span>
+        <span id="us4" class="us" style="background:blue;"></span>
+        <span id="us3" class="us" style="background:blue;"></span>
+        <span id="us2" class="us" style="background:blue;"></span>
+        <span id="us1" class="us" style="background:blue;"></span>
       </div>
     </section>
 
