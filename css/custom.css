@@ -19,10 +19,10 @@ section ul li img{height:225px; width:158px;}
 #gs5{width: 10px; height:650px; }
 #gs6{width: 11px; height:650px; }
 
-#us1{width: 2px; height:650px; background: blue;}
-#us2{width: 3px; height:650px; background: blue;}
-#us3{width: 4px; height:650px; background: blue;}
-#us4{width: 5px; height:650px; background: blue;}
+#us1{width: 6px; height:650px; background: blue;}
+#us2{width: 8px; height:650px; background: blue;}
+#us3{width: 10px; height:650px; background: blue;}
+#us4{width: 12px; height:650px; background: blue;}
 
 
 @media (min-width: 768px) {

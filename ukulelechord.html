@@ -12,16 +12,68 @@
     <title>Ukulele Chords</title>
   </head>
   <body class="container-fluid">
+
+    <!-- Header -->
     <section class="mx-auto">
       <div class="d-flex justify-content-between text-primary ">
         <a href="ukulele.html"><i class="fas fa-chevron-left fa-3x m-4"></i></a>
         <h3 class="m-auto">Ukulele Chords</h1>
-        <i class="fas fa-info fa-3x m-4"></i>
       </div>
+    </section>
+
+    <!-- Filter -->
+    <section class="mx-auto">
+      <div class="dropdown d-flex justify-content-center">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Show All
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li onclick="filter('All')"  class="dropdown-item">Show all</li>
+          <li onclick="filter('C')"  class="dropdown-item">C</li>
+          <li onclick="filter('D')"  class="dropdown-item">D</li>
+          <li onclick="filter('E')"  class="dropdown-item">E</li>
+          <li onclick="filter('F')"  class="dropdown-item">F</li>
+          <li onclick="filter('G')"  class="dropdown-item">G</li>
+          <li onclick="filter('A')"  class="dropdown-item">A</li>
+          <li onclick="filter('B')"  class="dropdown-item">B</li>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chord images -->
+    <section class="mx-auto">
+      <ul id="filterchord" class="p-0">
+      </ul>
+      <ul id="allchord" class="p-0">
+        <li  class="A" ><img src="images/a-u.png" alt=""></li>
+        <li  class="A" ><img src="images/am-u.png" alt=""></li>
+        <li  class="A" ><img src="images/a7-u.png" alt=""></li>
+        <li  class="B" ><img src="images/b-u.png" alt=""></li>
+        <li  class="B" ><img src="images/bm-u.png" alt=""></li>
+        <li  class="B" ><img src="images/b7-u.png" alt=""></li>
+        <li  class="C" ><img src="images/c-u.png" alt=""></li>
+        <li  class="C" ><img src="images/cm-u.png" alt=""></li>
+        <li  class="C" ><img src="images/c7-u.png" alt=""></li>
+        <li  class="D" ><img src="images/d-u.png" alt=""></li>
+        <li  class="D" ><img src="images/dm-u.png" alt=""></li>
+        <li  class="D" ><img src="images/d7-u.png" alt=""></li>
+        <li  class="E" ><img src="images/e-u.png" alt=""></li>
+        <li  class="E" ><img src="images/e7-u.png" alt=""></li>
+        <li  class="E" ><img src="images/em-u.png" alt=""></li>
+        <li  class="F" ><img src="images/f-u.png" alt=""></li>
+        <li  class="F" ><img src="images/fm-u.png" alt=""></li>
+        <li  class="F" ><img src="images/f7-u.png" alt=""></li>
+        <li  class="G" ><img src="images/g-u.png" alt=""></li>
+        <li  class="G" ><img src="images/gm7-u.png" alt=""></li>
+        <li  class="G" ><img src="images/gm-u.png" alt=""></li>
+        <li  class="G" ><img src="images/g7-u.png" alt=""></li>
+
+      </ul>
     </section>
 
     <!-- Optional JavaScript -->
     <script src="https://kit.fontawesome.com/909dac7db4.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
