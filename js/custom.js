@@ -1,3 +1,18 @@
+// Loading sounds for strings
+var e3= new Audio();
+var a3= new Audio();
+var d4= new Audio();
+var g4= new Audio();
+var b4= new Audio();
+var e5= new Audio();
+
+e3.src="/sounds/e3.mp3";
+a3.src="/sounds/a3.mp3";
+d4.src="/sounds/d4.mp3";
+g4.src="/sounds/g4.mp3";
+b4.src="/sounds/b4.mp3";
+e5.src="/sounds/e5.mp3";
+
 // Guitar string
 var gs1=document.getElementById("gs1");
 var gs2=document.getElementById("gs2");
@@ -56,6 +71,8 @@ if (gs.length!==0) { //check in guitar page or in ukulele page
   gs4.addEventListener("click", readstringinfo);
   gs5.addEventListener("click", readstringinfo);
   gs6.addEventListener("click", readstringinfo);
+
+
 }else {
   us1.addEventListener("click",selectstring);
   us2.addEventListener("click",selectstring);
@@ -215,4 +232,9 @@ function filter(note){
     filterchord.style.display ="none";
     dropdownMenuButton.innerHTML = 'Show ALL'; //change the dropdownbutton label
   }
+}
+
+
+function playsound(note){
+  note.play();
 }
