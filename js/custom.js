@@ -6,12 +6,12 @@ var g4= new Audio();
 var b4= new Audio();
 var e5= new Audio();
 
-e3.src="/sounds/e3.mp3";
-a3.src="/sounds/a3.mp3";
-d4.src="/sounds/d4.mp3";
-g4.src="/sounds/g4.mp3";
-b4.src="/sounds/b4.mp3";
-e5.src="/sounds/e5.mp3";
+e3.src="https://www.gtdb.org/sounds/guitarmaps/E3.mp3";
+a3.src="https://www.gtdb.org/sounds/guitarmaps/A3.mp3";
+d4.src="https://www.gtdb.org/sounds/guitarmaps/D4.mp3";
+g4.src="https://www.gtdb.org/sounds/guitarmaps/G4.mp3";
+b4.src="https://www.gtdb.org/sounds/guitarmaps/B4.mp3";
+e5.src="https://www.gtdb.org/sounds/guitarmaps/E5.mp3";
 
 // Guitar string
 var gs1=document.getElementById("gs1");
