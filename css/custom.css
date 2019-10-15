@@ -1,32 +1,38 @@
 
 html{height: 100%;}
-body{height: 100%; background-color: #15273a;}
+body{height: 100%; background-color: #00040e;}
 section{box-sizing:border-box;}
 section ul li{list-style: none; float:left; width:50%; padding:8px;}
 section ul li img{height:225px; width:158px;}
-
-
+a:hover{text-decoration: none;}
 .mh{min-height:50%;}
+
+#guitar{background-image: url("/images/guitarD.jpg"); background-position: center; background-size: cover;}
+#guitar h1{font-size: 130px; font-family: 'Liu Jian Mao Cao', cursive;}
+#ukulele{background-image: url("/images/ukuleleD.jpg"); background-position: center; background-size: cover;}
+#ukulele h1{font-size: 130px; font-family: 'Liu Jian Mao Cao', cursive;}
+
 
 #guitar{text-align:center;}
 #ukulele{text-align:center;}
 #sketch-div{text-align:center;}
 
-#gs1{width: 6px; height:650px; }
-#gs2{width: 7px; height:650px; }
-#gs3{width: 8px; height:650px; }
-#gs4{width: 9px; height:650px; }
-#gs5{width: 10px; height:650px; }
-#gs6{width: 11px; height:650px; }
+#gs1{width: 6px; height:350px; }
+#gs2{width: 7px; height:350px; }
+#gs3{width: 8px; height:350px; }
+#gs4{width: 9px; height:350px; }
+#gs5{width: 10px; height:350px; }
+#gs6{width: 11px; height:350px; }
 
-#us1{width: 6px; height:650px; background: blue;}
-#us2{width: 8px; height:650px; background: blue;}
-#us3{width: 10px; height:650px; background: blue;}
-#us4{width: 12px; height:650px; background: blue;}
+#us1{width: 6px; height:350px; background: blue;}
+#us2{width: 8px; height:350px; background: blue;}
+#us3{width: 10px; height:350px; background: blue;}
+#us4{width: 12px; height:350px; background: blue;}
 
 
 @media (min-width: 768px) {
-
+#guitar h1{font-size: 200px;}
+#ukulele h1{font-size: 200px;}
 section{max-width: 768px; border-color: yellow;}
 section ul li{list-style: none; float:left; width:33%;}
 section ul li img{padding:35px;height:400px; width:285px;}

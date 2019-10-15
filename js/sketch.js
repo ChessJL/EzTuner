@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
   var spectrum = fft.analyze();
-  background("#15273a");
+  background("#00040e");
   textSize(43);
   textAlign(CENTER,CENTER);
   indicator();
