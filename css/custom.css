@@ -7,9 +7,9 @@ section ul li img{height:225px; width:158px;}
 a:hover{text-decoration: none;}
 .mh{min-height:50%;}
 
-#guitar{background-image: url("/images/guitarD.jpg"); background-position: center; background-size: cover;}
+#guitar{background-image: url("../images/guitarD.jpg"); background-position: center; background-size: cover;}
 #guitar h1{font-size: 130px; font-family: 'Liu Jian Mao Cao', cursive;}
-#ukulele{background-image: url("/images/ukuleleD.jpg"); background-position: center; background-size: cover;}
+#ukulele{background-image: url("../images/ukuleleD.jpg"); background-position: center; background-size: cover;}
 #ukulele h1{font-size: 130px; font-family: 'Liu Jian Mao Cao', cursive;}
 
 
