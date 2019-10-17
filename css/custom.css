@@ -7,6 +7,9 @@ section ul li img{height:225px; width:158px;}
 a:hover{text-decoration: none;}
 .mh{min-height:50%;}
 
+#cover img {border-radius: 4px;padding: 5px;width: 350px;}
+.full-height {height: 100%;box-sizing:border-box;}
+
 .h45{height:45%;}
 .h55{height:55%;}
 
@@ -33,10 +36,10 @@ a:hover{text-decoration: none;}
 
 
 @media (min-width: 768px) {
-#guitar h1{font-size: 200px;}
-#ukulele h1{font-size: 200px;}
-body{max-width: 768px;}
-section{max-width: 768px;}
-section ul li{list-style: none; float:left; width:33%;}
-section ul li img{padding:35px;height:400px; width:285px;}
+  #guitar h1{font-size: 200px;}
+  #ukulele h1{font-size: 200px;}
+  body{max-width: 768px;}
+  section{max-width: 768px;}
+  section ul li{list-style: none; float:left; width:33%;}
+  section ul li img{padding:35px;height:400px; width:285px;}
 }
