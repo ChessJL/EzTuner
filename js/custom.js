@@ -190,11 +190,14 @@ function selectstring(){
     }
     if (counter == 6 ) {   // no strings have been selected
       this.style.background = "red";
+      this.style.boxShadow = "0px 0px 20px 3px red";
     }else{   // one string have been selected
       for (var i = 0; i < gs.length; i++) {
         gs[i].style.background = "blue" //change all back to blue
+        gs[i].style.boxShadow = "none";
       }
       this.style.background = "red";  //change the select one to red
+      this.style.boxShadow = "0px 0px 20px 3px red";
     }
   }else if (this.className === 'us') {
     for (var i = 0; i < us.length; i++) { //check any string is selected or not.
@@ -204,11 +207,17 @@ function selectstring(){
     }
     if (counter == 4 ) {   // no strings have been selected
       this.style.background = "red";
+      this.style.boxShadow = "0px 0px 20px 3px red";
+
     }else{   // one string have been selected
       for (var i = 0; i < us.length; i++) {
         us[i].style.background = "blue" //change all back to blue
+        us[i].style.boxShadow = "none";
+
       }
       this.style.background = "red";  //change the select one to red
+      this.style.boxShadow = "0px 0px 20px 3px red";
+
     }
   }
 

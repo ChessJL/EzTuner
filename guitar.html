@@ -13,56 +13,55 @@
   </head>
   <body class="container-fluid">
     <section id="tunersection" class="mx-auto h-100">
-      <div class="d-flex justify-content-between text-primary">
-        <a href="index.html"><i class="fas fa-chevron-left fa-3x m-4"></i></a>
-        <h1 class="m-auto">Guitar</h1>
-        <i class="fas fa-info fa-3x m-4" data-toggle="modal" data-target="#tutorial"></i>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="TutorialTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="TutorialTitle">Tutorial</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>1. Select a string</p>
-              <p>2. strum the string on your guitar</p>
-              <p>3. Check the indicator. If it is showing too high, loosen the sting. If it is showing too low, tighten the string.</p>
-              <p>4. If you see the color of the chord turns to green, that will be the correct tune.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="d-flex justify-content-between text-primary">
+          <a href="index.html"><i class="fas fa-chevron-left fa-3x m-4"></i></a>
+          <h1 class="m-auto">Guitar</h1>
+          <i class="fas fa-info fa-3x m-4" data-toggle="modal" data-target="#tutorial"></i>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="TutorialTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TutorialTitle">Tutorial</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>1. Select a string</p>
+                <p>2. strum the string on your guitar</p>
+                <p>3. Check the indicator. If it is showing too high, loosen the sting. If it is showing too low, tighten the string.</p>
+                <p>4. If you see the color of the chord turns to green, that will be the correct tune.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <a href="guitarchord.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">See Chords</a>
-      </div>
+        <div class="text-center">
+          <a href="guitarchord.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">See Chords</a>
+        </div>
 
-
-      <div class="border border-primary m-3" id="sketch-div"></div>
-
-      <div class="h2 d-flex justify-content-between text-primary mt-5 mx-5">
-        <span >E6</span>
-        <span >A5</span>
-        <span >D4</span>
-        <span >G3</span>
-        <span >B2</span>
-        <span>E1</span>
-      </div>
-      <div class="d-flex justify-content-between text-primary mt-2 mx-5 overflow-hidden">
-        <span id="gs6" class="gs" onclick="playsound(e3)" style="background:blue;"></span>
-        <span id="gs5" class="gs" onclick="playsound(a3)" style="background:blue;"></span>
-        <span id="gs4" class="gs" onclick="playsound(d4)" style="background:blue;"></span>
-        <span id="gs3" class="gs" onclick="playsound(g4)" style="background:blue;"></span>
-        <span id="gs2" class="gs" onclick="playsound(b4)" style="background:blue;"></span>
-        <span id="gs1" class="gs" onclick="playsound(e5)" style="background:blue;"></span>
-      </div>
+        <div class="border border-primary m-3" id="sketch-div"></div>
+        <div class="h2 d-flex justify-content-around text-primary mt-5 mx-5">
+          <span >E6</span>
+          <span >A5</span>
+          <span >D4</span>
+          <span >G3</span>
+          <span >B2</span>
+          <span>E1</span>
+        </div>
+        
+        <div class="d-flex justify-content-around text-primary mt-2 mx-5 overflow-hidden">
+          <span id="gs6" class="gs" onclick="playsound(e3)" style="background:blue;"></span>
+          <span id="gs5" class="gs" onclick="playsound(a3)" style="background:blue;"></span>
+          <span id="gs4" class="gs" onclick="playsound(d4)" style="background:blue;"></span>
+          <span id="gs3" class="gs" onclick="playsound(g4)" style="background:blue;"></span>
+          <span id="gs2" class="gs" onclick="playsound(b4)" style="background:blue;"></span>
+          <span id="gs1" class="gs" onclick="playsound(e5)" style="background:blue;"></span>
+        </div>
     </section>
     <!-- Optional JavaScript -->
     <script src="https://kit.fontawesome.com/909dac7db4.js"></script>
