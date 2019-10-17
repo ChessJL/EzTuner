@@ -253,7 +253,6 @@ function filter(note){
   }
 }
 
-
 function playsound(note){
   note.play();
 }
