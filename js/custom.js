@@ -6,12 +6,22 @@ var g4= new Audio();
 var b4= new Audio();
 var e5= new Audio();
 
+var ug4= new Audio();
+var uc4= new Audio();
+var ue4= new Audio();
+var ua4= new Audio();
+
 e3.src="https://www.gtdb.org/sounds/guitarmaps/E3.mp3";
 a3.src="https://www.gtdb.org/sounds/guitarmaps/A3.mp3";
 d4.src="https://www.gtdb.org/sounds/guitarmaps/D4.mp3";
 g4.src="https://www.gtdb.org/sounds/guitarmaps/G4.mp3";
 b4.src="https://www.gtdb.org/sounds/guitarmaps/B4.mp3";
 e5.src="https://www.gtdb.org/sounds/guitarmaps/E5.mp3";
+
+ug4.src="https://ukutuner.com/sounds/ukulele/G4.mp3";
+uc4.src="https://ukutuner.com/sounds/ukulele/C4.mp3";
+ue4.src="https://ukutuner.com/sounds/ukulele/E4.mp3";
+ua4.src="https://ukutuner.com/sounds/ukulele/A4.mp3";
 
 // Guitar string
 var gs1=document.getElementById("gs1");
