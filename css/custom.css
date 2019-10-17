@@ -12,28 +12,27 @@ a:hover{text-decoration: none;}
 #ukulele{background-image: url("../images/ukuleleD.jpg"); background-position: center; background-size: cover;}
 #ukulele h1{font-size: 130px; font-family: 'Liu Jian Mao Cao', cursive;}
 
-
 #guitar{text-align:center;}
 #ukulele{text-align:center;}
 #sketch-div{text-align:center;}
 
-#gs1{width: 6px; height:350px; }
-#gs2{width: 7px; height:350px; }
-#gs3{width: 8px; height:350px; }
-#gs4{width: 9px; height:350px; }
-#gs5{width: 10px; height:350px; }
-#gs6{width: 11px; height:350px; }
+#gs1{width: 6px; height:100%; }
+#gs2{width: 7px; height:100%; }
+#gs3{width: 8px; height:100%; }
+#gs4{width: 9px; height:100%; }
+#gs5{width: 10px; height:100%; }
+#gs6{width: 11px; height:100%; }
 
-#us1{width: 6px; height:350px; background: blue;}
-#us2{width: 8px; height:350px; background: blue;}
-#us3{width: 10px; height:350px; background: blue;}
-#us4{width: 12px; height:350px; background: blue;}
+#us1{width: 6px; height:100%; background: blue;}
+#us2{width: 8px; height:100%; background: blue;}
+#us3{width: 10px; height:100%; background: blue;}
+#us4{width: 12px; height:100%; background: blue;}
 
 
 @media (min-width: 768px) {
 #guitar h1{font-size: 200px;}
 #ukulele h1{font-size: 200px;}
-section{max-width: 768px; border-color: yellow;}
+body div{max-width: 768px; border-color: yellow;}
 section ul li{list-style: none; float:left; width:33%;}
 section ul li img{padding:35px;height:400px; width:285px;}
 }
